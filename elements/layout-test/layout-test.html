@@ -1,0 +1,51 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+
+<dom-module id="layout-test">
+
+    <style>
+        /* Example from migration guide */
+        .header {
+            @apply(--layout-horizontal --layout-center);
+        }
+
+        /* A hack that makes it work */
+        .hack {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -ms-flex-direction: row;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+    </style>
+
+    <template>
+
+        <!-- Working example from migration guide  -->
+        <div class="header">
+            <img src="https://www.polymer-project.org/images/logos/lockup.svg">
+            <span class="name">name</span>
+        </div>
+
+        <!-- This example does not work  -->
+        <div class="header">
+            <img src="https://www.polymer-project.org/images/logos/lockup.svg">
+            <section class="name">name</section>
+        </div>
+
+
+        <!-- This hack works fine -->
+        <div class="hack">
+            <img src="https://www.polymer-project.org/images/logos/lockup.svg">
+            <section class="name">name</section>
+        </div>
+
+    </template>
+</dom-module>
+<script type="text/javascript">
+    Polymer({
+        is: 'layout-test'
+    });
+</script>

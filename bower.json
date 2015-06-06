@@ -1,0 +1,33 @@
+{
+  "name": "polymer1layouttest",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nburn42/polymer1layouttest",
+  "authors": [
+    "nburn42"
+  ],
+  "description": "A test of polymer 1.0 layouts",
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "~0.7.2",
+    "polymer": "~1.0.2",
+    "iron-icons": "PolymerElements/iron-icons#~1.0.1",
+    "iron-iconset": "PolymerElements/iron-iconset#~1.0.0",
+    "paper-toolbar": "PolymerElements/paper-toolbar#~1.0.0",
+    "paper-tabs": "PolymerElements/paper-tabs#~1.0.0",
+    "paper-header-panel": "PolymerElements/paper-header-panel#~1.0.1",
+    "iron-pages": "PolymerElements/iron-pages#~1.0.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#~1.0.1"
+  }
+}
